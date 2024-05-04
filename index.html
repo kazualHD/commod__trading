@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="/js/devextreme/jquery.js"></script>
+    <link href="/css/stylestartpage.css" rel="stylesheet" />
+    <script src="/js/signalr/dist/browser/signalr.js"></script>
+    <script src="/js/signalr/dist/browser/signalr-protocol-msgpack.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header preview fix _lp">
+            <div class="header__content _container">
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="/Home/index">
+                                    <img src="img/logo.svg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="/Home/index">НА САЙТ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/Home/large-wholesale">КРУПНЫЙ ОПТ</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/stations">Станции</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/railway">Ж/д</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/pipe">Труба</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a hasp-area="" class="menu__sub-link" href="/Home/market">Срочный рынок</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/sug">СУГ</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/analytics">Аналитика</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/quotes">Котировки</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/Home/small-wholesale">МЕЛКИЙ ОПТ</a>
+                            </li>
+                            <li class="menu__item">
+                                <span class="menu__link">О “КОММОДЕ”</span>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/versions">Версии</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/contacts">Контакты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/home/magazine">БЛОГ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                        <div class="menu__buttons">
+                            <a class="menu__btn _icon-user _active" href="/Account/Login">Войти в личный кабинет</a>
+                        </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="main-preview">
+            <section class="middle-wrapper">
+                <div class="middle">
+                    <div class="middle-title">КОММОД ВЕБ</div>
+                    <a class="middle-btn" href="/main">
+                        <div class="mtn-logo">
+                            <img src="img/icons/user-logo.svg" alt="Enter logo" />
+                        </div>
+                        <span class="enter">Войти в АТ "КОММОД" ВЕБ</span>
+                    </a>
+
+                    <div class="prices-wrapper">
+                        <div class="prices-wrapper__title">
+                            Биржевые цены на сегодня АИ-92
+                        </div>
+                        <div class="prices-items">
+                            <div class="prices-item-first">
+                                <div class="item-icon"></div>
+                                <div class="item-content">
+                                    <div class="item-content__title"></div>
+                                    <div class="item-slider">
+                                        <div class="item-carousel">
+                                            <div class="item-carousel-price">
+                                                <span class="value"></span>
+                                                <span class="curr">РУБ</span>
+                                            </div>
+                                            <div class="item-carousel-diff">
+                                                <span class="value"></span>
+                                            </div>
+                                            <div class="item-carousel__price1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices-item-second">
+                                <div class="item-icon"></div>
+                                <div class="item-content">
+                                    <div class="item-content__title"></div>
+                                    <div class="item-slider">
+                                        <div class="item-carousel">
+                                            <div class="item-carousel-price">
+                                                <span class="value"></span>
+                                                <span class="curr">РУБ</span>
+                                            </div>
+                                            <div class="item-carousel-diff">
+                                                <span class="value"></span>
+                                            </div>
+                                            <div class="item-carousel__price1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices-item-third">
+                                <div class="item-icon"></div>
+                                <div class="item-content">
+                                    <div class="item-content__title"></div>
+                                    <div class="item-slider">
+                                        <div class="item-carousel">
+                                            <div class="item-carousel-price">
+                                                <span class="value"></span>
+                                                <span class="curr">РУБ</span>
+                                            </div>
+                                            <div class="item-carousel-diff">
+                                                <span class="value"></span>
+                                            </div>
+                                            <div class="item-carousel__price1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-preview-bottom">
+                <div class="presentation">
+                    <div class="presentation-logo">
+                        <img src="img/presentation.svg" alt="Presentation logo" />
+                    </div>
+                    <div class="presentation-text">
+                        Видеопрезентация:<br />
+                        что такое АТ "КОММОД"
+                    </div>
+                </div>
+                <div class="teams-wrapper">
+                    <div class="team">Команда разработки</div>
+                    <div class="chevron"></div>
+                </div>
+                <a class="watch-wrapper" href="#">
+                    <div class="mpb-play">
+                        <img src="img/icons/play_white.svg" alt="Play code" />
+                    </div>
+                    <span class="watch">Смотреть видео</span>
+                </a>
+            </section>
+        </main>
+    </div>
+    <script src="./js/startpagescript.js"></script>
+</body>
+</html>
