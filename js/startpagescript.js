@@ -64,23 +64,23 @@ if (nodeSlider != null) {
 //STOCK CONNECTION SECTION START
 ////////////////////////////////
 //connection to signalR web socket
-const connection = new signalR.HubConnectionBuilder()
-    .withUrl("https://api.commod.ru/sharedmarketsignal/sharedspotsignal", {
-        transport: signalR.HttpTransportType.WebSockets,
-    })
-    .withHubProtocol(new signalR.protocols.msgpack.MessagePackHubProtocol())
-    .withAutomaticReconnect([0, 10000, 15000, 30000])
-    .build();
+// const connection = new signalR.HubConnectionBuilder()
+//     .withUrl("https://api.commod.ru/sharedmarketsignal/sharedspotsignal", {
+//         transport: signalR.HttpTransportType.WebSockets,
+//     })
+//     .withHubProtocol(new signalR.protocols.msgpack.MessagePackHubProtocol())
+//     .withAutomaticReconnect([0, 10000, 15000, 30000])
+//     .build();
 
-async function start() {
-    try {
-        await connection.start();
-        console.log("SignalR Connected successfully");
-    } catch (err) {
-        console.log(err);
-        setTimeout(start, 5000);
-    }
-}
+// async function start() {
+//     try {
+//         await connection.start();
+//         console.log("SignalR Connected successfully");
+//     } catch (err) {
+//         console.log(err);
+//         setTimeout(start, 5000);
+//     }
+// }
 
 function callSocketStreams() {
     //call QuotesOnConnected - это котировки
@@ -132,15 +132,15 @@ function callSocketStreams() {
     });
 }
 
-$(async () => {
-    try {
-        console.log("xxx");
-        await start();
-        callSocketStreams();
-    } catch (error) {
-        console.log(error);
-    }
-});
+// $(async () => {
+//     try {
+//         console.log("xxx");
+//         await start();
+//         callSocketStreams();
+//     } catch (error) {
+//         console.log(error);
+//     }
+// });
 
 //////////////////////////////
 //STOCK CONNECTION SECTION END
