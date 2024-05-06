@@ -1,11 +1,29 @@
 @media (min-width: 360px) and (max-width: 480px) {
-    .main-preview .middle-wrapper .middle {
-        margin: 20px
-       }
-       .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-first, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-second, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-third {
+
+  .main-preview .middle-wrapper .middle .prices-wrapper__title {
+    margin-left: 30px;
+  }
+   .prices-wrapper {
+    margin: 10px;
+   }
+  .main-preview .middle-wrapper .middle-title {
+    text-align: center;
+  }
+  .main-preview .middle-wrapper .middle {
+    margin: 20px auto;
+    max-width: 360px;
+    width: 100%;
+    transform: translateY(-40px);
+  }
+  .main-preview .middle-wrapper .middle-btn {
+    margin: 0 auto 60px auto;
+    max-width: 360px;
+  }
+    
+    .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-first, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-second, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-third {
         padding: 5px;
        }
-       .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-first .item-content__title, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-second .item-content__title, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-third .item-content__title {
+    .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-first .item-content__title, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-second .item-content__title, .main-preview .middle-wrapper .middle .prices-wrapper .prices-items .prices-item-third .item-content__title {
         font-size: 13px;
        }
     .main-preview .middle-wrapper .middle-title {
@@ -15,23 +33,71 @@
         background-position: center center;
     }
     .main-preview-bottom {
-        display: none;
-    }
-}
+      display: none;
+  }
+  }
+
 @media (min-width: 481px) and (max-width: 768px) { 
-    .main-preview {
-        background-position: center center;
-    }
+  .main-preview {
+    background-position: center center;
+}
+  
+  .menu__buttons {
+    margin-left: 20px;
+  }
+  .main-preview .middle-wrapper .middle {
+    margin: 0 20px 50px 50px;
+  }
+  
+  .main-preview .middle-wrapper .middle-title {
+    font-size: 60px;
+  }
+   
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-preview {
+    background-position: center;
+  }
+  .menu__buttons {
+    margin-left: 58px;
+  }
+  .main-preview .middle-wrapper .middle-title {
+    font-size: 70px;
+  }
+  .main-preview {
+    background-position: center;
+  }
+
+
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .main-preview {
+    background-position: center center;
+}
+  .header.preview.fix._lp .header__content._container {
+    max-width: 970px;
+    margin: 0;
+    margin-left: 15px;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .menu__list {
+    gap: 35px
+  }
+  .menu__btn:first-child {
+    transform:translateX(25px)
+  }
 }
 @media (min-width: 360px) and (max-width: 991px) {
-    .header.preview {
-        background: #000000;
+     .header.preview {
+           background: #00000074;   
+         /* background: #000000; */
     }
     .header__burger {
         width: 55px;
         height: 55px;
         border-radius: 10px;
-        /* background: white; */
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -60,7 +126,7 @@
           background: linear-gradient(to bottom, #000000, #000000);   
           height: 0;
           transition: all 0.5s ease-in-out;
-           top: 95px; 
+           top: 130px; 
           left: 0;
           overflow: hidden;
         }
@@ -92,8 +158,20 @@
 
     }
 
-    @media (min-width: 360px)  and (max-width: 5120px) {
+    @media (min-width: 240px)  and (max-width: 5120px) {
         .menu__body:nth-of-type(1) {
             display: none;
         }
+    }
+
+    @media (min-width: 480px) and (max-width: 530px) {
+      .main-preview-bottom {
+        display: none;
+    }
+    .main-preview .middle-wrapper .middle {
+      margin: 0 20px 50px 40px;
+    }
+     .menu__buttons {
+      margin-left: 10px;
+     }
     }
